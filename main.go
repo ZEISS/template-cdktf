@@ -8,7 +8,9 @@ import (
 	"github.com/hashicorp/terraform-cdk-go/cdktf"
 )
 
-type config struct{}
+type config struct {
+	filename string
+}
 
 func NewNoopStack(scope constructs.Construct, id string, cfg *config) cdktf.TerraformStack {
 	stack := cdktf.NewTerraformStack(scope, jsii.String(id))
@@ -17,7 +19,7 @@ func NewNoopStack(scope constructs.Construct, id string, cfg *config) cdktf.Terr
 
 	file := file.NewFile(stack, jsii.String("file"), &file.FileConfig{
 		Content:  jsii.String("Hello, World!"),
-		Filename: jsii.String("hello.txt"),
+		Filename: jsii.String(cfg.filename),
 	})
 
 	cdktf.NewTerraformOutput(stack, jsii.String("filename"), &cdktf.TerraformOutputConfig{
@@ -29,6 +31,10 @@ func NewNoopStack(scope constructs.Construct, id string, cfg *config) cdktf.Terr
 
 func main() {
 	app := cdktf.NewApp(nil)
+
+	NewNoopStack(app, "stack", &config{
+		filename: "hello.txt",
+	})
 
 	app.Synth()
 }

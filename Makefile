@@ -1,23 +1,21 @@
 .DEFAULT_GOAL := build
 
+PWD 			:= $(shell pwd)
+
 GO 				?= go
 GO_RUN_TOOLS 	?= $(GO) run -modfile ./tools/go.mod
 GO_TEST 		?= $(GO_RUN_TOOLS) gotest.tools/gotestsum --format pkgname
 GO_RELEASER 	?= $(GO_RUN_TOOLS) github.com/goreleaser/goreleaser
 GO_MOD 			?= $(shell ${GO} list -m)
 
-.PHONY: build
-build: ## Build the Terraform 
-	$(GO_RELEASER) build --snapshot --clean
-
 .PHONY: release
 release: ## Release the Terraform provider
 	$(GO_RELEASER) release --rm-dist
 
-.PHONY: out
-out: ## Build the Terraform provider
-	$(GO) run main.go
-
+.PHONY: deploy
+deploy: ## Deploy the Terraform provider
+	npx -y cdktf-cli deploy
+	
 .PHONY: generate
 generate: ## Generate code.
 	$(GO) generate ./...
