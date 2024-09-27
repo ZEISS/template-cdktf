@@ -64,5 +64,5 @@ jobs:
           cdktfVersion: 0.20.9
           terraformVersion: 1.9.5
           mode: auto-approve-apply
-          stackName: my-stack
+          stackName: stack
           githubToken: ${{ secrets.GITHUB_TOKEN }}
