@@ -1,7 +1,7 @@
 github.com/Masterminds/semver/v3 v3.3.0 h1:B8LGeaivUe71a5qox1ICM/JLl0NqZSW5CHyL+hmvYS0=
 github.com/Masterminds/semver/v3 v3.3.0/go.mod h1:4V+yj/TJE1HU9XfppCwVMZq3I84lprf4nC11bSS5beM=
-github.com/aws/constructs-go/constructs/v10 v10.3.0 h1:LsjBIMiaDX/vqrXWhzTquBJ9pPdi02/H+z1DCwg0PEM=
-github.com/aws/constructs-go/constructs/v10 v10.3.0/go.mod h1:GgzwIwoRJ2UYsr3SU+JhAl+gq5j39bEMYf8ev3J+s9s=
+github.com/aws/constructs-go/constructs/v10 v10.3.1 h1:EIdnuq1UCcSYuVSMlsR6ZN2lAt5T6JaDm9yvDLuPx5k=
+github.com/aws/constructs-go/constructs/v10 v10.3.1/go.mod h1:FkTTlHWsi3uY/YCptHv0Vg/uDXKH/+bclqPdQTaSLr8=
 github.com/aws/jsii-runtime-go v1.103.1 h1:7CwjdpiSrylOeuYP1LzHu2AJKV2K65P89nuOC/8Do7g=
 github.com/aws/jsii-runtime-go v1.103.1/go.mod h1:PPR8BRc8cv9lDs5gDPe2SGG4+crOahE4SRrNHR1SvhA=
 github.com/cdktf/cdktf-provider-local-go/local/v10 v10.1.1 h1:KeFxQG8Bi4kFMzCfm0aRddS75rsVs9+iDpjvXG0E3k4=
