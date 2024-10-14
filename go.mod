@@ -3,7 +3,7 @@ module cdk.tf/go/stack
 go 1.23
 
 require (
-	github.com/aws/constructs-go/constructs/v10 v10.3.0
+	github.com/aws/constructs-go/constructs/v10 v10.4.1
 	github.com/aws/jsii-runtime-go v1.103.1
 	github.com/cdktf/cdktf-provider-local-go/local/v10 v10.1.1
 	github.com/hashicorp/terraform-cdk-go/cdktf v0.20.9
