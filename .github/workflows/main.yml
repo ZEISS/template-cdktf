@@ -47,7 +47,7 @@ jobs:
       - run: make lint
 
   deploy:
-    if: ${{ github.ref != 'ref/head/dependabot' }}
+    if: success() && !contains( github.ref, 'dependabot' )
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
