@@ -30,7 +30,7 @@ jobs:
           path: .test/reports/**-test.xml
           reporter: java-junit
           fail-on-error: "true"
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: success() || failure()
         with:
           name: Test Reports
@@ -47,7 +47,7 @@ jobs:
       - run: make lint
 
   deploy:
-    if: ${{ github.actor != 'dependabot[bot]' }}
+    if: success() && !contains( github.ref, 'dependabot' )
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

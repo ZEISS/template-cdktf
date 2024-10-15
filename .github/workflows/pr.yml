@@ -14,9 +14,8 @@ jobs:
     permissions:
       checks: write
     uses: ./.github/workflows/main.yml
-
   plan:
-    if: ${{ github.actor != 'dependabot[bot]' }}
+    if: success() && !contains( github.ref, 'dependabot' )
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
