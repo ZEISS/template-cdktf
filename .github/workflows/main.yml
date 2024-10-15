@@ -4,10 +4,6 @@ name: Test & Build
 
 on:
   workflow_call:
-    inputs:
-      disable_deploy:
-        type: boolean
-        default: false
   push:
     branches:
       - main
@@ -51,7 +47,7 @@ jobs:
       - run: make lint
 
   deploy:
-    if: ${{ github.actor != 'dependabot[bot]' }} &&  ${{ inputs.disable_deploy == false }}
+    if: ${{ github.ref != 'ref/head/dependabot' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4

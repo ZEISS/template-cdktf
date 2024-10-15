@@ -14,10 +14,8 @@ jobs:
     permissions:
       checks: write
     uses: ./.github/workflows/main.yml
-    with:
-      disable_deploy: ${{ github.actor == 'dependabot[bot]' }}
   plan:
-    if: ${{ github.actor != 'dependabot[bot]' }}
+    if: ${{ github.ref != 'ref/head/dependabot' }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
