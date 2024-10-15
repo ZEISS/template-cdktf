@@ -4,6 +4,10 @@ name: Test & Build
 
 on:
   workflow_call:
+    inputs:
+      disable_deploy:
+        type: boolean
+        default: false
   push:
     branches:
       - main
@@ -30,7 +34,7 @@ jobs:
           path: .test/reports/**-test.xml
           reporter: java-junit
           fail-on-error: "true"
-      - uses: actions/upload-artifact@v3
+      - uses: actions/upload-artifact@v4
         if: success() || failure()
         with:
           name: Test Reports
@@ -47,7 +51,7 @@ jobs:
       - run: make lint
 
   deploy:
-    if: ${{ github.actor != 'dependabot[bot]' }}
+    if: ${{ github.actor != 'dependabot[bot]' }} &&  ${{ inputs.disable_deploy == false }}
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
