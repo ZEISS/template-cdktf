@@ -7,7 +7,7 @@ require (
 	github.com/aws/jsii-runtime-go v1.105.0
 	github.com/cdktf/cdktf-provider-local-go/local/v10 v10.1.1
 	github.com/hashicorp/terraform-cdk-go/cdktf v0.20.10
-	github.com/stretchr/testify v1.9.0
+	github.com/stretchr/testify v1.10.0
 )
 
 require (
