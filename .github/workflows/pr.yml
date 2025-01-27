@@ -25,7 +25,7 @@ jobs:
         with:
           node-version: 20
       - run: npx cdktf-cli get
-      - uses: hashicorp/terraform-cdk-action@v6
+      - uses: hashicorp/terraform-cdk-action@v7
         with:
           cdktfVersion: 0.20.9
           terraformVersion: 1.9.5
