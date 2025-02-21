@@ -4,7 +4,7 @@ go 1.23
 
 require (
 	github.com/aws/constructs-go/constructs/v10 v10.3.0
-	github.com/aws/jsii-runtime-go v1.106.0
+	github.com/aws/jsii-runtime-go v1.107.0
 	github.com/cdktf/cdktf-provider-local-go/local/v10 v10.1.1
 	github.com/hashicorp/terraform-cdk-go/cdktf v0.20.11
 	github.com/stretchr/testify v1.10.0
