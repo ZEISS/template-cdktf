@@ -8,7 +8,7 @@ require (
 	github.com/golangci/golangci-lint v1.64.8
 	github.com/goreleaser/goreleaser v1.26.2
 	golang.org/x/perf v0.0.0-20240910214617-f1a715d501dd
-	gotest.tools/gotestsum v1.12.1
+	gotest.tools/gotestsum v1.12.2
 	mvdan.cc/gofumpt v0.8.0
 )
 
