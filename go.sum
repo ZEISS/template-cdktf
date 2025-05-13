@@ -1,11 +1,11 @@
 github.com/Masterminds/semver/v3 v3.3.1 h1:QtNSWtVZ3nBfk8mAOu/B6v7FMJ+NHTIgUPi7rj+4nv4=
 github.com/Masterminds/semver/v3 v3.3.1/go.mod h1:4V+yj/TJE1HU9XfppCwVMZq3I84lprf4nC11bSS5beM=
-github.com/aws/constructs-go/constructs/v10 v10.3.0 h1:LsjBIMiaDX/vqrXWhzTquBJ9pPdi02/H+z1DCwg0PEM=
-github.com/aws/constructs-go/constructs/v10 v10.3.0/go.mod h1:GgzwIwoRJ2UYsr3SU+JhAl+gq5j39bEMYf8ev3J+s9s=
+github.com/aws/constructs-go/constructs/v10 v10.4.2 h1:+hDLTsFGLJmKIn0Dg20vWpKBrVnFrEWYgTEY5UiTEG8=
+github.com/aws/constructs-go/constructs/v10 v10.4.2/go.mod h1:cXsNCKDV+9eR9zYYfwy6QuE4uPFp6jsq6TtH1MwBx9w=
 github.com/aws/jsii-runtime-go v1.112.0 h1:7jusWZUgSTuSPLa2ZRv+siGuyoFSzFNk/TaHqlcFe6Y=
 github.com/aws/jsii-runtime-go v1.112.0/go.mod h1:jiAbLN2Hz+7At3C59LsQyv8gK3HvfNYF2YFPkWLHll8=
-github.com/cdktf/cdktf-provider-local-go/local/v10 v10.1.1 h1:KeFxQG8Bi4kFMzCfm0aRddS75rsVs9+iDpjvXG0E3k4=
-github.com/cdktf/cdktf-provider-local-go/local/v10 v10.1.1/go.mod h1:9sOHEMYMVkuLF0Z7H0CSfAw02Hh06lOriMRvzUpAp8U=
+github.com/cdktf/cdktf-provider-local-go/local/v10 v10.1.2 h1:xqph4FL+QiAtfN/iGBLErsXxjf2kPe87wTkfnAv6wtg=
+github.com/cdktf/cdktf-provider-local-go/local/v10 v10.1.2/go.mod h1:8/MDKvcHpiCuGq3M/9JaPsrhiwKkwxPnSy+xdyYEDRQ=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
 github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/fatih/color v1.18.0 h1:S8gINlzdQ840/4pfAwic/ZE0djQEH3wM94VfqLTZcOM=
