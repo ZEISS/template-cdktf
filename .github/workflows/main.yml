@@ -60,7 +60,7 @@ jobs:
 
       - run: npx cdktf-cli get
 
-      - uses: hashicorp/terraform-cdk-action@v8
+      - uses: hashicorp/terraform-cdk-action@v9
         with:
           cdktfVersion: 0.20.9
           terraformVersion: 1.9.5
