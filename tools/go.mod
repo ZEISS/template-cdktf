@@ -10,7 +10,7 @@ require (
 	github.com/goreleaser/goreleaser v1.26.2
 	golang.org/x/perf v0.0.0-20240910214617-f1a715d501dd
 	gotest.tools/gotestsum v1.12.3
-	mvdan.cc/gofumpt v0.9.0
+	mvdan.cc/gofumpt v0.9.1
 )
 
 require (
